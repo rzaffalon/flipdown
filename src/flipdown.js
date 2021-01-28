@@ -396,7 +396,7 @@ export default class FlipDown {
  * @param {string} n - Number to pad
  * @param {number} len - Desired length of number
  **/
-function pad(n, len) {
+export function pad(n, len) {
   n = n.toString();
   return n.length < len ? pad("0" + n, len) : n;
 }
@@ -407,7 +407,7 @@ function pad(n, len) {
  * @author PButcher
  * @param {object} parent - Parent
  **/
-function appendChildren(parent, children) {
+export function appendChildren(parent, children) {
   children.forEach((el) => {
     parent.appendChild(el);
   });
